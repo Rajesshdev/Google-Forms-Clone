@@ -1,0 +1,152 @@
+/*File: ag.css
+   Objective: 
+   The objective of the page is  to apply customized styles to various elements and classes. 
+   This includes setting specific background colors for hovered rows and columns in a grid, 
+   adjusting the color of placeholder text in custom input fields, defining the color of buttons, 
+   managing overflow behavior for a table container, customizing font size for grid rows,
+   creating tooltips with distinct appearance and positioning, and establishing the background color for an app bar element.
+   These styles aim to enhance the visual presentation, interactivity, and usability of the corresponding HTML elements,
+   ultimately improving the overall user experience of the web page or application.
+   
+*/
+
+.ag-row-hover {
+  background-color: #dfdfff !important;
+  /* Background color for hovered rows in a grid */
+}
+.ag-header-cell-text {
+  font-size: 14px !important;
+}
+
+.custom-input ::placeholder {
+  color: black !important;
+  /* Color for input placeholders in a custom input */
+}
+
+.Grid_Button {
+  color: black !important;
+  /* Color for buttons with the class "Grid_Button" */
+}
+
+.css-rorn0c-MuiTableContainer-root {
+  overflow: hidden;
+  /* Setting overflow behavior for a table container with the class "css-rorn0c-MuiTableContainer-root" */
+}
+
+
+.ag-column-hover {
+  background-color: #dfffdf !important;
+  /* Background color for hovered columns in a grid */
+}
+
+.tooltip {
+  position: relative;
+  /* Setting the position of tooltips */
+  display: inline-block;
+  /* Displaying tooltips as inline elements */
+  opacity: 1;
+  /* Opacity of tooltips */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* Hiding the tooltip text by default */
+  width: 120px;
+  /* Width of the tooltip text */
+  background-color: black;
+  /* Background color of the tooltip text */
+  color: #fff;
+  /* Text color of the tooltip text */
+  text-align: center;
+  /* Aligning the text in the center of the tooltip */
+  border-radius: 6px;
+  /* Border radius of the tooltip */
+  padding: 5px 0;
+  /* Padding of the tooltip text */
+  position: absolute;
+  /* Positioning the tooltip absolutely */
+  z-index: 1;
+  /* Z-index of the tooltip text */
+  top: 150%;
+  /* Positioning the tooltip below the element */
+  left: 50%;
+  /* Positioning the tooltip horizontally centered */
+  margin-left: -60px;
+  /* Adjusting the tooltip's left position */
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  /* Empty content for the tooltip arrow */
+  position: absolute;
+  /* Positioning the tooltip arrow absolutely */
+  bottom: 100%;
+  /* Positioning the arrow above the tooltip */
+  left: 50%;
+  /* Positioning the arrow horizontally centered */
+  margin-left: -5px;
+  /* Adjusting the arrow's left position */
+  border-width: 5px;
+  /* Width of the arrow */
+  border-style: solid;
+  /* Border style of the arrow */
+  border-color: transparent transparent black transparent;
+  /* Border color of the arrow */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* Font family for the tooltip arrow */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  /* Making the tooltip text visible on hover */
+}
+
+.appbar {
+  background-color: #e7edfb !important;
+  /* Background color of the element with the class "appbar" */
+}
+
+.Form_Details-description {
+  width: 455px !important;
+}
+.Question_header{
+  flex-wrap: wrap !important;
+}
+/* Media Queries */
+@media screen and (max-width: 400px) {
+  .Form_Details-description {
+    width: 150px !important;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .Form_Details-description {
+    width: 180px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Form_Details-description {
+    width: 230px !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .Form_Details-description {
+    width: 300px !important;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .Form_Details-description {
+    width: 455px !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Form_Details-description {
+    width: 455px !important;
+  }
+}
