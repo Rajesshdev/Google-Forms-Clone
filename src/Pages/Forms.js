@@ -1,63 +1,4 @@
-{
-  /*File: Forms.js
-   Objective: 
-   The objective of this page Forms component is to create a form management page that allows users to view and interact with a grid-based representation of form data.
-   Users can add new forms, edit existing forms, and delete selected forms. The component utilizes various libraries and hooks, 
-   such as React Router, Ant Design, and React Snackbar, to implement the desired functionality.
 
-   Here are the more detailed objectives of the Forms component:
-
-   Import Dependencies: 
-   The component imports the necessary dependencies, including the useHistory hook from the React Router library and the liveApi function.
-
-   Set State Variables: 
-   The component initializes state variables using the useState hook. 
-   It defines AGData to store the form data, success to display success messages, and failure to display error messages.
-
-   Grid Initialization: 
-   The component defines the onGridReady function, which is called when the grid is ready.
-   It sets the gridApi variable to the API instance provided by the grid.
-
-   Fetch Form Data: 
-   The GetForm function fetches the form data from the server using the liveapi function. 
-   It sets the retrieved form data to the AGData state variable.
-
-   Edit Functionality: 
-   The Edit function is called when the Edit button is clicked. 
-   It retrieves the selected row(s) from the grid using the gridApi.selectionService.getSelectedRows() method. 
-   It then redirects the user to the edit page of the selected form by updating the URL using the history.push method.
-
-   Fetch Data on Mount: 
-   The component uses the useEffect hook to call the GetForm function when the component mounts. 
-   This ensures that the form data is fetched and stored in the AGData state variable.
-
-   Defining utility functions: 
-   The code defines several utility functions such as handleClose (to handle closing the popup), and allow (to allow certain actions).
-
-   Render User Interface: 
-   The component renders the user interface elements using JSX syntax. 
-   It uses the Ant Design components, such as AppBar, Toolbar, and Button, to create the header with buttons for adding, editing, and deleting forms. 
-   The AgGrid component is used to display the grid with the form data. 
-   The component also includes Snackbar components to display success and failure messages.
-
-   Interact with Grid: 
-   The Forms component interacts with the AgGrid component by passing the AGData state variable as a prop to display the form data. 
-   It also passes the AgColumnData prop to configure the column headers and data mapping. 
-   The onGridReady function is provided as a prop to set up the grid API instance and enable row selection.
-
-   Handle User Actions:
-   The component handles user actions, such as clicking the Add button to navigate to the form addition page and clicking the Edit button to trigger the Edit function. 
-   However, the code for the Delete functionality is commented out and not included in the provided code snippet.
-
-   Display Messages: 
-   The component displays success and failure messages using the Snackbar component from the React Snackbar library.
-   When the success or failure state variables have a value, the corresponding message is shown to the user.
-
-By achieving these objectives, the Forms component provides a functional and interactive form management page. 
-It allows users to view, add, and edit form data in a grid-based layout. 
-The component communicates with server APIs to fetch and update form data, and it utilizes various libraries and components to enhance the user experience
-*/
-}
 // Import React Hooks
 import React, { useState, useEffect } from "react";
 // Import Router Hook
@@ -243,6 +184,7 @@ const Forms = () => {
             onGridReady={onGridReady} // Pass onGridReady function as a prop to AgGrid component
             rowSelection="single" // Set rowSelection prop of AgGrid component to "single"
             headerHeight={55}
+            onFilterChanged={""}
           />
         </div>
         {/* Snackbar for success message */}

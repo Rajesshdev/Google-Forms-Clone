@@ -1,24 +1,4 @@
-{
-  /*File: Excel.js
-   Objective: The objective of the page defines exports data to an Excel file using the XLSX library.
-   The Excel function takes several parameters: rowData3, rowData, title, and Column. Here's an explanation of the code:
-    It imports the moment library to get the current date in the desired format.
-    The function determines the data to be used for Excel export. If rowData3 has elements,
-    it assigns rowData3 to the data variable; otherwise, it assigns rowData.
-    It then maps over the data array and merges each object's asset_attributes property with the rest of the properties using the spread operator.
-    A new workbook is created using XLSX.utils.book_new().
-    A new worksheet (ws) is created using XLSX.utils.json_to_sheet(data, { origin: "A1" }).
-    The origin option specifies the starting cell for the data.
-    The column names are added as a row at the beginning of the worksheet using XLSX.utils.sheet_add_aoa(ws, [Column], { origin: "A1" }).
-    The Column parameter is expected to be an array containing the column names.
-    The worksheet is appended to the workbook using XLSX.utils.book_append_sheet(workbook, ws, "SheetName").
-    You can replace "SheetName" with the desired name for the worksheet.
-    
-    Finally, the Excel file is generated and downloaded using XLSX.writeFile(workbook, title + "-" + newdate + ".xlsx").
-    The file name will be constructed based on the title parameter and the current date.
-    The Excel function can be exported and used in other parts of the code to generate and download Excel files based on the provided data and column names
-*/
-}
+
 // Import React
 import React from "react";
 // Import sheetjs-style Component Hook

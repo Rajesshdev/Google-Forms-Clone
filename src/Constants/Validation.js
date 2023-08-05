@@ -1,18 +1,4 @@
-{
-  /*File: Validation.js
-   Objective: 
-   The objective of the page is code segment is to establish a robust validation schema for a form template in a React application, using the Yup library. 
-   This validation schema, named FormvalidationSchema, defines the rules and constraints that the form data must adhere to.
-   It ensures that the title field is required, and if a field type is not a "Heading" or "Subheading," it enforces the requirement of a non-empty title field.
-   The schema also governs the validation of other form fields, their attributes, and associated options.
-   Additionally, the code sets up initial form values using the FormValues object. 
-   These values represent a basic form template with a single form field, and default values are assigned to fields such as form_type_id and description. 
-   The form_fields array within FormValues allows for the addition of more form fields as needed.
 
-Overall, this code segment aims to ensure data integrity and validity within the form template by implementing validation rules and providing a structured starting point for creating new form templates in a React application.
-
-*/
-}
 // Import Yub Hook
 import * as Yup from "yup";
 // Import uuid form Id Generator

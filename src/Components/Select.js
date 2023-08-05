@@ -1,24 +1,4 @@
-{
-  /*File: Select.js
-   Objective: The objective of the page is to display a custom select component, CustomSelect, 
-   that allows the user to choose from a variety of options. The options are displayed as a dropdown menu, 
-   and each option is represented by a MenuItem component..
-   The available options in the CustomSelect component include:
-    1.Short Answer: Represented by a text input field with limited character count.
-    2.Long Answer: Represented by a text area for longer textual responses.
-    3.Numeric: Represented by a text input field for numeric responses.
-    4.Heading: Represents a section heading in a form or questionnaire.
-    5.Subheading: Represents a subheading within a section of a form or questionnaire.
-    6.YEs/No
-    6.Checkbox: Represents a checkbox input option.
-    7.Radio Button: Represents a radio button input option.
-    8.DateTime: Represents a date and time input field.
-    9.DateOnly: Represents a date input field.
-    10.Time: Represents a time input field.
-    11.Dropdown: Represents a dropdown menu for selecting an option from a list.
-    12.ImageUpload: Represents a file upload option for uploading images or files.
-*/
-}
+
 // Import React Hooks
 import React, { useEffect, useState } from "react";
 // Import uuid form Id Generator

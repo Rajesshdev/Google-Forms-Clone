@@ -1,18 +1,3 @@
-{
-  /*File: AGgrid.js
-   Objective: The objective of the page is to create a reusable Grid component that displays 
-   data in a tabular format using the Ag-Grid library.
-  The Grid component expects certain props to be passed to it, including AGData (the data to be displayed), 
-  AgColumnData (the column definitions), onGridReady (a callback function for the grid ready event), 
-  rowSelection (the mode of row selection), and onFilterChanged (a callback function for filter changes).
-  The Page component serves as an example usage of the Grid component. 
-  It demonstrates how to fetch the necessary data and column definitions, handle the grid ready event, and handle filter changes. 
-  The fetched data is then passed as props to the Grid component for rendering.
-  By separating the Grid component from the Page component, it promotes reusability, 
-  making it easier to use the same grid component in different parts of the application with different data and configurations..
-  
-*/
-}
 import React from "react";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-alpine.css";

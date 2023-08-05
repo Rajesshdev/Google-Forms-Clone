@@ -1,33 +1,4 @@
-{
-  /*File: Template.js
-       Objective: 
-       The objective of this page to create a reusable IconSelector component that allows users to select an icon from a dialog.
-       The selected icon is then displayed as a button. The component provides the ability to search for icons based on a search query.
-       The objective of integrating the IconSelector component into a form could be to allow users to select an icon for a specific field or input within the form.
-       The selected icon can be visually represented and associated with the corresponding form field.
-       Here are the key features and objectives of the code:
-       Display the selected icon: When an icon is selected from the IconSelector component, it is displayed as a button. 
-       This allows users to see the chosen icon visually and provides an intuitive representation of the selected icon.
-  
-       Search for icons: The IconSelector component includes a search functionality that allows users to search for icons based on a search query.
-       This helps users quickly find specific icons among a large collection.
-  
-       Reusability: The IconSelector component is designed to be reusable, meaning it can be easily integrated into different forms or components throughout the application. 
-       This promotes code reusability and reduces duplication.
-       Integration with a form: The IconSelector component can be integrated into a form by including it alongside other form fields.
-       The selected icon can be associated with a specific field, allowing users to visually identify the purpose or nature of the field based on the selected icon.
-       
-       By incorporating the IconSelector component into a form, the objective is to enhance the user experience by providing a visually appealing and interactive way to select icons for specific form fields
-    
-       Initiated By: Rajesh  A on 26st June
-    Modification History
-    --------------------------------------------------------------------------------------------------------------------
-    DATE     |   AUTHOR   |  ModifiCation Request No.                  |      Remarks / Details of Changes
-    --------------------------------------------------------------------------------------------------------------------
-    26-Jun-2023  Rajesh                                                            Initial creation
-    --------------------------------------------------------------------------------------------------------------------
-    */
-}
+
 // Import React Hooks
 import React, { useEffect, useState } from "react";
 // Import FontAwesome Hooks

@@ -1,47 +1,4 @@
-{
-  /*File: Forms Template.js
-   Objective: 
-   The objective of the page TransferList component is to create a UI component that allows users to transfer items between two lists using checkboxes.
-   It provides a visually appealing interface for selecting and moving items from one list to another.
-   
-   Here are the more detailed objectives of the TransferList component:
 
-   Flexibility and Customization: 
-   The component accepts leftdata and rightdata as props, representing the initial items in the left and right lists, respectively.
-   It also receives a values prop, which specifies the field name to be displayed as the primary text for each item in the lists.
-   This flexibility allows the component to be used with different sets of data and customize the displayed information based on the application's needs.
-  
-   Interactive Checkbox Functionality: 
-   The component renders checkboxes for each item in the lists, allowing users to select one or more items.
-   It keeps track of the checked items using the checked state.
-   Clicking on an item's checkbox triggers the handleToggle function, which toggles the checked state of the corresponding item.
-
-   Transfer of Items: 
-   The component provides buttons labeled "Assign" and "Deassign" to move the selected items between the left and right lists. 
-   Clicking the "Assign" button (handleCheckedRight function) adds the checked items from the left list to the right list,
-   while clicking the "Deassign" button (handleCheckedLeft function) moves the checked items from the right list back to the left list. 
-   The items are updated in the respective state variables (left and right), and the checked items are removed from the checked state.
-
-   Dynamic List Updates: 
-   The component listens for changes in the leftdata and rightdata props and updates the corresponding lists accordingly. 
-   If the parent component updates the leftdata or rightdata prop, the component's state variables left and right are updated to reflect the changes. 
-   This enables the component to respond to changes in the underlying data and keep the UI in sync.
-
-   Parent Component Integration:
-    The component provides a way to communicate the items on the right side back to the parent component through the data prop. 
-    When the items on the right side change, the component triggers the data prop function, passing the updated items as an argument. 
-    This allows the parent component to access and utilize the selected items for further processing or updating the application state.
-
-   Responsive and Aesthetic UI: 
-   The component utilizes Material-UI components, such as Card, List, Button, and Checkbox, to create a visually appealing UI. 
-   It organizes the lists and buttons in a grid layout using Grid components and applies responsive styles to ensure proper alignment 
-   and spacing on different screen sizes.
-
-By achieving these objectives, the TransferList component provides a user-friendly and interactive way for users to select and transfer items between two lists. 
-It promotes reusability, customization, and integration with parent components, enhancing the overall development experience when implementing similar functionality in React applications
-
-*/
-}
 // Import React Component Hooks
 import React, { useEffect, useState } from "react";
 // Mui component hooks

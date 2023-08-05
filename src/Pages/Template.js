@@ -1,34 +1,4 @@
-{
-  /*File: Template.js
-   Objective: 
-   The objective of this page to create a form template in a React application. 
-   The template allows users to define the structure and fields of a form.
-   The form template can be either a "Checklist" or a "Ticket" form.
-   Implement a form template creation and editing functionality in a React application.
-   
-   Allow users to create new form templates or edit existing ones.
-   Retrieve the editid parameter from the URL to determine if it's a new form creation or an existing form update.
-   Fetch the existing form data from the server if an editid is provided.
-   Set up form state management using the Formik component to handle form values, validation, and submission.
-   Define a validation schema (FormvalidationSchema) to validate the form fields based on specified rules.
-   Handle form submission (handlesubmit function):
-   If it's a new form, send a POST request to the server to create the form template.
-   If it's an existing form, send a PUT request to the server to update the form template.
-   Provide form input fields for the template name, form type, and description.
-   Implement dynamic field reordering functionality using drag and drop.
-   Use the react-beautiful-dnd library for drag and drop functionality within the DragDropContext, Droppable, and Draggable components.
-   Update the form field order based on the dragged and dropped positions.
-   Display success and failure messages using the Snackbar component to provide feedback on form creation or update status.
-   Redirect users to the form list page (/assets/forms/list) after a successful form creation or update.
-   Utilize various MUI components such as TextField, Select, Button, Checkbox, Tooltip, etc., for form inputs and UI elements.
-   Import custom components (Selects, MyTextField) for reusable form input fields.
-   Utilize React Router's useHistory hook to enable navigation and redirection after form submission or cancellation.
-   Employ a live API service (liveApi) to interact with the server and perform CRUD operations on form templates.
-   Handle and display errors if there are any API request failures or exceptions.
-   In summary, the code aims to provide a user-friendly interface for creating and editing form templates with form field reordering capability, 
-   form validation, and feedback messages on form submission status
-*/
-}
+
 // Import React Hooks
 import React, { useState, useEffect } from "react";
 // Import Router Hooks

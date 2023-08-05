@@ -1,39 +1,4 @@
-{
-  /*File: Fileupload.js
-   Objective: The objective of the page defines a DocumentUploader component that allows users to attach and upload documents or images.
-   Here's an overview of its functionality:
-    The component receives two props: title (used internally) and onVideoUploaded (a callback function called when a video is uploaded).
-    It initializes several state variables using the useState hook: loading (tracks the loading state), stage (tracks the stage of file upload),
-    fileErrors (stores file upload errors), success (tracks the success state), open (controls the visibility of a popup),
-    popupdata (stores popup data), and popupdata1 (stores additional popup data).
-    It uses the useRef hook to create a reference to access the file input element (fileChoose1).
-    The api variable is assigned the result of calling the liveApi function, presumably to obtain an API instance.
-    The handleClose function is called when the popup is closed. It sets open to false, clears popupdata1, and clears fileErrors.
-    The allow function is called when the user allows the action in the popup. It performs the same actions as handleClose.
-    The useStyles and classes variables are created using the makeStyles and createStyles functions from Material-UI to define styles for the component.
-    The onFileChoose function is called when the user selects files. It starts the loading state, sets the stage to "uploading," and
-    retrieves the selected files from the file input element. It iterates over the files and checks their types.
-    If the type is valid (PDF or image), the file is uploaded using the uploadImage function. 
-    If the upload is successful, the onVideoUploaded callback function is called with the uploaded media information. 
-    If there are any errors during the upload process, they are added to the fileErrors array. 
-    Finally, the loading state is stopped, the file errors are set, and the stage is set to "uploaded."
-    The uploadImage function is an asynchronous function that uploads a file to the server.
-    It uses the api instance to make a POST request to /doc_upload/ to obtain the necessary fields for the upload.
-    It then creates a FormData object and appends the response fields and the file to it.
-    It uses XMLHttpRequest to send the form data to the server. 
-    If the upload is successful (status 204), the success state is set, and the promise is resolved with the response data. 
-    Otherwise, the promise is rejected.
-    The component renders a button with an attached file icon. Clicking the button triggers a click event on the hidden file input element (fileChoose1), allowing the user to choose files for upload.
-    The Alertpopup component is rendered, which displays a popup if there are file errors. 
-    It receives props such as open (controls the visibility of the popup), close (callback function to close the popup),
-    allow (callback function when the user allows the action in the popup), data (popup data), and data1 (additional popup data).
-    The rendered HTML includes a hidden file input element and a hidden div. The file input element is used to handle file selection, 
-    and the div is used to display the Alertpopup component.
-    The DocumentUploader component provides a way for users to attach and upload documents or images, handles file type validation, displays loading states, and shows a popup for file upload errors. 
-    The onVideoUploaded callback function can be used to handle the uploaded media information in the parent component.
 
-*/
-}
 import React, { useState, useRef } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
